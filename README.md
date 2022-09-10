@@ -10,7 +10,23 @@ annotation categories:
 - Cheerful, Happy for PA
 - Angry, Nervous, Sad for NA 
 
-where the measurement scale is from 1: very low to 4: very high, respectively, as described in detail in KEmoCon paper. The unique value of PA and NA for each annotation step is derived as the mean of the individual emotional states belonging to each category. This value is then transformed from the present range ([1, 4]) to a larger ([1, 100]). The result is the creation of a time series for each emotional state, experimenter, and annotation perspective.
+where the measurement scale is from 1: very low to 4: very high, respectively, as described in detail in KEmoCon paper. The unique value of PA and NA for each annotation step is derived as the mean of the individual emotional states belonging to each category. This value is then transformed from the present range ([1, 4]) to a larger ([1, 100]). The result is the creation of a time series for each emotional state, experimenter, and annotation perspective. 
+
+Below is an example illustration of the time series of 4 participants and 100 annotation steps for each emotional state and annotation perspective.
+
+PA time series - self annotation perspective         |  NA time series - self annotation perspective
+:-------------------------:|:-------------------------: |
+![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/PA_times_series_self.png)  |  ![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/NA_time_series_self.png)
+
+
+PA time series - partner annotation perspective         |  NA time series - partner annotation perspective
+:-------------------------:|:-------------------------: |
+![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/PA_time_series_partner.png)  |  ![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/NA_time_series_partner.png)
+
+
+PA time series - external annotation perspective         |  NA time series - external annotation perspective
+:-------------------------:|:-------------------------: |
+![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/PA_time_series_external.png)  |  ![](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/results/NA_time_series_external.png)
 
 ### Complex affect dynamic measures
 For the calculation of complex affect dynamic measures, we utilized the paper mentioned above. After preprocessing the KEmoCon dataset to the appropriate format instructed by the authors of the paper above via [preprocess_dataset.py](https://github.com/sotirismos/Complex-Affect-Dynamics/blob/main/preprocess_dataset.py), we
